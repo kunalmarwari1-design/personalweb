@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Kunal Marwari | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0f172a;
+color:#f1f5f9;
+line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+background:#1e293b;
+text-align:center;
+padding:40px 20px;
+border-bottom:2px solid #38bdf8;
+}
+
+header h1{
+font-size:40px;
+color:#38bdf8;
+}
+
+header p{
+margin-top:10px;
+opacity:0.9;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:center;
+gap:30px;
+background:#020617;
+padding:15px;
+flex-wrap:wrap;
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav a{
+color:#e2e8f0;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* SECTION */
+
+section{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.card{
+background:#1e293b;
+padding:30px;
+border-radius:10px;
+margin-bottom:30px;
+}
+
+/* ABOUT */
+
+.about{
+background:#1e293b;
+display:flex;
+border-radius:10px;
+transition:0.4s;
+}
+
+.about:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
+.about-text{
+padding:20px;
+width:70%;
+}
+
+.about img{
+width:220px;
+border-radius:10px;
+margin:20px;
+}
+
+/* EDUCATION */
+
+.timeline{
+border-left:3px solid #38bdf8;
+padding-left:30px;
+}
+
+.edu-card{
+background:#1e293b;
+padding:25px;
+margin-bottom:30px;
+border-radius:10px;
+position:relative;
+transition:0.4s;
+}
+
+.edu-card::before{
+content:'';
+width:15px;
+height:15px;
+background:#38bdf8;
+border-radius:50%;
+position:absolute;
+left:-38px;
+top:30px;
+}
+
+.edu-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* SKILLS */
+
+.skill{
+margin:20px 0;
+}
+
+.skill-name{
+margin-bottom:5px;
+}
+
+.bar{
+height:10px;
+background:#334155;
+border-radius:10px;
+overflow:hidden;
+}
+
+.bar-fill{
+height:10px;
+background:#38bdf8;
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:20px;
+}
+
+.project{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+border-left:4px solid #38bdf8;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+box-shadow:0 10px 25px rgba(56,189,248,0.3);
+}
+
+.project-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 20px;
+background:#38bdf8;
+color:#020617;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+transition:0.3s;
+}
+
+.project-btn:hover{
+background:#0ea5e9;
+transform:translateY(-2px);
+}
+
+/* CONTACT */
+
+.contact-box{
+display:flex;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.contact-item{
+flex:1;
+min-width:200px;
+padding:25px;
+background:#1e293b;
+border-radius:12px;
+text-align:center;
+transition:0.4s;
+}
+
+.contact-item span{
+font-size:28px;
+display:block;
+margin-bottom:10px;
+}
+
+.contact-item p{
+color:#94a3b8;
+margin-bottom:5px;
+}
+
+.contact-item a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:bold;
+}
+
+.contact-item:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(56,189,248,0.4);
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+background:#020617;
+padding:15px;
+margin-top:30px;
+border-top:1px solid #38bdf8;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header h1{
+font-size:28px;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+.about img{
+width:160px;
+margin:auto;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Kunal Marwari</h1>
+<p>BCA Student | Aspiring Web Developer</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+
+<div class="about">
+
+<div class="about-text">
+
+<h2>About Me</h2>
+<br>
+
+<p>Hello! I am <b>Kunal Marwari</b>, a passionate BCA student who enjoys learning and building websites. I have a strong interest in web development and technology.</p>
+
+<br>
+
+<p>I enjoy working with modern web technologies such as HTML, CSS, JavaScript, PHP, and MySQL.</p>
+
+<br>
+
+<p>My goal is to become a professional software developer and contribute to real-world digital products.</p>
+
+</div>
+
+<div>
+
+<img src="image0.jpeg" alt="Profile Photo">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+<br>
+
+<div class="timeline">
+
+<div class="edu-card">
+<b>Bachelor of Computer Applications (BCA)</b><br>
+Graduating: 2026<br>
+Current Aggregate: 70%+
+</div>
+
+<div class="edu-card">
+<b>Class 12th</b><br>
+Board: CBSE<br>
+Marks: 78%
+</div>
+
+<div class="edu-card">
+<b>Class 10th</b><br>
+Board: CBSE<br>
+Marks: 82%
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<div class="card">
+
+<h2>Skills</h2>
+
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="bar"><div class="bar-fill" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="bar"><div class="bar-fill" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">JavaScript</div>
+<div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">PHP</div>
+<div class="bar"><div class="bar-fill" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+<div class="skill-name">MySQL</div>
+<div class="bar"><div class="bar-fill" style="width:70%"></div></div>
+</div>
+
+</div>
+
+</section>
+
+<section id="portfolio">
+
+<div class="card">
+
+<h2>Portfolio</h2>
+
+<div class="portfolio">
+
+<div class="project">
+<h3>Online Food Delivery Website</h3>
+<p>Developed a food ordering platform using PHP and MySQL with menu display and order management.</p>
+<a href="https://foodordering29.netlify.app/" class="project-btn">View Project</a>
+</div>
+
+<div class="project">
+<h3>E-commerce Website</h3>
+<p>Created a shopping website with product listing and responsive design.</p><br>
+<a href="#" class="project-btn">View Project</a>
+</div>
+
+<div class="project">
+<h3>Personal Portfolio</h3>
+<p>A responsive personal website showcasing skills and projects.</p><br><br>
+<a href="#" class="project-btn">View Project</a>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+<br>
+
+<div class="contact-box">
+
+<div class="contact-item">
+<span>📧</span>
+<p>Email</p>
+<a href="mailto:kunal@email.com">kunal@email.com</a>
+</div>
+
+<div class="contact-item">
+<span>💬</span>
+<p>WhatsApp</p>
+<a href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a>
+</div>
+
+<div class="contact-item">
+<span>💼</span>
+<p>LinkedIn</p>
+<a href="#">View Profile</a>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Kunal Marwari | Portfolio Website</p>
+</footer>
+
+</body>
+</html>
+```
